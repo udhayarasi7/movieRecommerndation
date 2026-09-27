@@ -14,7 +14,7 @@ GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 app = FastAPI(title="Movie Recommendation API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["http://localhost:5173", "https://movie-recommerndation-kappa.vercel.app/"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
